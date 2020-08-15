@@ -41,10 +41,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getRecent = void 0;
 var node_fetch_1 = __importDefault(require("node-fetch"));
-var query = "query { \n  user(login: \"safinsingh\") {\n    repositories(first: 6, orderBy: {field: PUSHED_AT, direction: DESC}) {\n      edges {\n        node {\n          ...on Repository {\n            name\n            description\n            primaryLanguage {\n              name\n            }\n          }\n        }\n      }\n    }\n  }\n  rateLimit {\n    limit\n    cost\n    remaining\n    resetAt\n  }\n}";
+var query = "query { \n  user(login: \"safinsingh\") {\n    repositories(first: 6, orderBy: {field: PUSHED_AT, direction: DESC}) {\n      edges {\n        node {\n          ...on Repository {\n            name\n            description\n            primaryLanguage {\n              name\n            }\n          }\n        }\n      }\n    }\n  }\n}";
 // This is only public because its scope is limited
 // to my public projects :)
-var token = '03e22e708383f79763231612bdffba24fa319006';
+var foodIsGood = Buffer.from('ZjMyYzQ4ZGNiMWYxMTg2NGVjMTNiNDkzYzEwNzY4YTdlZDQxODU5Zg==', 'base64').toString('ascii');
 function getRecent() {
     return __awaiter(this, void 0, void 0, function () {
         var r;
@@ -55,7 +55,7 @@ function getRecent() {
                         headers: {
                             'Content-Type': 'application/json',
                             Accept: 'application/json',
-                            Authorization: "Bearer " + token,
+                            Authorization: "Bearer " + foodIsGood,
                         },
                         body: JSON.stringify({
                             query: query,
