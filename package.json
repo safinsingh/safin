@@ -1,9 +1,10 @@
 {
   "name": "safin",
-  "version": "1.0.0",
-  "description": "info about me",
-  "main": "index.js",
+  "version": "1.0.2",
+  "description": "Info about me!",
+  "main": "build/index.js",
   "scripts": {
+    "safin": "node build/index.js",
     "dev": "ts-node-dev src/index.ts",
     "start": "ts-node src/index.ts",
     "lint": "eslint src/ --fix",
