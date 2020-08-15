@@ -1,6 +1,6 @@
 {
   "name": "safin",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Info about me!",
   "main": "build/index.js",
   "scripts": {
@@ -10,7 +10,11 @@
     "lint": "eslint src/ --fix",
     "format": "prettier --write src/",
     "format-ci": "prettier src/",
-    "lint-ci": "eslint src/"
+    "lint-ci": "eslint src/",
+    "prepublish": "tsc"
+  },
+  "bin": {
+    "safin": "./build/index.js"
   },
   "repository": {
     "type": "git",
@@ -34,8 +38,8 @@
     "ts-node": "^8.10.2"
   },
   "devDependencies": {
-    "@types/inquirer": "^7.3.0",
     "@types/chalk": "^2.2.0",
+    "@types/inquirer": "^7.3.0",
     "@types/node": "^14.0.27",
     "@types/node-fetch": "^2.5.7",
     "@types/open": "^6.2.1",
@@ -44,6 +48,7 @@
     "eslint": "^7.6.0",
     "prettier": "^2.0.5",
     "ts-node-dev": "^1.0.0-pre.57",
+    "tsc": "^1.20150623.0",
     "typescript": "^3.9.7"
   }
 }
