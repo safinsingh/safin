@@ -24,7 +24,9 @@ const query = `query {
   }
 }`
 
-const token = 'Bearer 00c22d2036b2cea9e909683ee7faf9be8e4838ca'
+// This is only public because its scope is limited
+// to my public projects :)
+const token = '03e22e708383f79763231612bdffba24fa319006'
 
 export async function getRecent() {
   const r = await fetch('https://api.github.com/graphql', {
@@ -32,7 +34,7 @@ export async function getRecent() {
     headers: {
       'Content-Type': 'application/json',
       Accept: 'application/json',
-      Authorization: token,
+      Authorization: `Bearer ${token}`,
     },
     body: JSON.stringify({
       query: query,
