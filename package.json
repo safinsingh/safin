@@ -1,6 +1,6 @@
 {
   "name": "safin",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Info about me!",
   "main": "build/index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "format": "prettier --write src/",
     "format-ci": "prettier src/",
     "lint-ci": "eslint src/",
-    "prepublish": "tsc && echo -e \"#!/usr/bin/env node\n$(cat build/index.js)\""
+    "prepublish": "tsc && echo -e \"#!/usr/bin/env node\n$(cat build/index.js)\" > build/index.js"
   },
   "bin": {
     "safin": "./build/index.js"
