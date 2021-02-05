@@ -1,6 +1,6 @@
 {
 	"name": "safin",
-	"version": "2.0.0",
+	"version": "3.0.0",
 	"description": "A CLI to display information about myself",
 	"keywords": [
 		"github"
@@ -9,6 +9,9 @@
 	"bin": {
 		"safin": "dist/index.js"
 	},
+	"files": [
+		"dist/"
+	],
 	"homepage": "https://github.com/safinsingh/safin",
 	"license": "AGPL-3.0",
 	"author": {
@@ -29,7 +32,8 @@
 		"fmt:ci": "prettier --check '**/*.{js,ts,tsx,yml,scss,json}'",
 		"lint": "eslint '**/*.{js,ts,tsx}' --fix",
 		"lint:ci": "eslint '**/*.{js,ts,tsx}'",
-		"postinstall": "husky install"
+		"postinstall": "husky install",
+		"prepublish": "pnpm build"
 	},
 	"devDependencies": {
 		"@types/eslint": "^7.2.6",
