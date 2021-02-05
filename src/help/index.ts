@@ -25,7 +25,7 @@ ${bold('Examples')}:
 
 ${bold('Examples')}:
 	When run without a subcommand, \`safin\` walks through an interactive
-	prompt for each subcommand. This is reccomended for first-time users.`
+	prompt for each subcommand. This is recommended for first-time users.`
 
 export const leaveMessage = `Bye!
 `
