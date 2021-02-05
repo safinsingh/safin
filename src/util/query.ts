@@ -1,7 +1,27 @@
-import { promises as fs } from 'fs'
-import { join } from 'path'
 import fetch from 'node-fetch'
 import type { APIResponse } from '../types'
+
+const query = `query {
+	user(login: "safinsingh") {
+		repositories(
+			first: 6
+			orderBy: { field: PUSHED_AT, direction: DESC }
+			affiliations: OWNER
+		) {
+			edges {
+				node {
+					... on Repository {
+						name
+						description
+						primaryLanguage {
+							name
+						}
+					}
+				}
+			}
+		}
+	}
+}`
 
 // This is only public because its scope is limited
 // to my public projects :)
@@ -12,9 +32,7 @@ const foodIsGood = Buffer.from(
 
 export const getProjects = async () => {
 	const response = await fetch('https://api.github.com/graphql', {
-		body: JSON.stringify({
-			query: await fs.readFile(join(__dirname, 'query.graphql'), 'utf-8')
-		}),
+		body: JSON.stringify({ query }),
 		headers: {
 			Accept: 'application/json',
 			Authorization: `Bearer ${foodIsGood}`,
