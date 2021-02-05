@@ -1,6 +1,6 @@
 {
 	"name": "safin",
-	"version": "3.0.2",
+	"version": "3.0.3",
 	"description": "A CLI to display information about myself",
 	"keywords": [
 		"github"
@@ -24,7 +24,7 @@
 		"url": "https://github.com/safinsingh/safin"
 	},
 	"scripts": {
-		"build": "[ -d \"dist\" ] && rm -rf dist; tsc",
+		"build": "[ -d \"dist\" ] && rm -rf dist; tsc && TMP=$(mktemp) && echo '#!/usr/bin/env node' | cat - dist/index.js >$TMP && mv $TMP dist/index.js",
 		"start": "ts-node src/index.ts",
 		"dev": "ts-node-dev src/index.ts",
 		"fmt": "prettier --write '**/*.{js,ts,tsx,yml,scss,json}'",
