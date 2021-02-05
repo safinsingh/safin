@@ -40,31 +40,24 @@ export const prompt = async (toolbox: GluegunToolbox) => {
 	}
 
 	const { command } = await ask(question)
-	switch (command) {
-		case PromptChoice.PROJECTS:
-			await runProjects(toolbox)
-			break
-		case PromptChoice.WEBSITE:
-			await runWebsite(toolbox)
-			break
-		case PromptChoice.GITHUB:
-			await runGitHub(toolbox)
-			break
-		case PromptChoice.TWITTER:
-			await runTwitter(toolbox)
-			break
-		case PromptChoice.LINKEDIN:
-			await runLinkedIn(toolbox)
-			break
-		case PromptChoice.HELP:
-			info(helpMessage)
-			break
-		case PromptChoice.NONE:
+	const actions = {
+		[PromptChoice.PROJECTS]: async () => runProjects(toolbox),
+		[PromptChoice.WEBSITE]: async () => runWebsite(toolbox),
+		[PromptChoice.GITHUB]: async () => runGitHub(toolbox),
+		[PromptChoice.TWITTER]: async () => runTwitter(toolbox),
+		[PromptChoice.LINKEDIN]: async () => runLinkedIn(toolbox),
+		[PromptChoice.HELP]: async () => info(helpMessage),
+		[PromptChoice.NONE]: async () => {
 			info(leaveMessage)
 			// eslint-disable-next-line node/no-process-exit
 			process.exit(0)
-		default:
-			throw new Error('Unhandled option!')
+		}
+	}
+
+	try {
+		await actions[command as keyof typeof actions]()
+	} catch {
+		throw new Error('Unhandled option!')
 	}
 
 	await prompt(toolbox)
