@@ -3,6 +3,7 @@
 		"dbaeumer.vscode-eslint",
 		"esbenp.prettier-vscode",
 		"editorconfig.editorconfig",
-		"timonwong.shellcheck"
+		"timonwong.shellcheck",
+		"graphql.vscode-graphql"
 	]
 }

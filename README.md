@@ -1,3 +1,3 @@
-# @ankylos/preset-node
+# safin
 
-A Node.JS preset for `@ankylos`
+An interactive CLI about me!

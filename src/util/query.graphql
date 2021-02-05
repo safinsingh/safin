@@ -1,0 +1,21 @@
+query {
+	user(login: "safinsingh") {
+		repositories(
+			first: 6
+			orderBy: { field: PUSHED_AT, direction: DESC }
+			affiliations: OWNER
+		) {
+			edges {
+				node {
+					... on Repository {
+						name
+						description
+						primaryLanguage {
+							name
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -5,7 +5,8 @@ module.exports = {
 		'canonical/typescript',
 		'canonical/node',
 		'plugin:prettier/recommended',
-		'prettier/@typescript-eslint'
+		'prettier/@typescript-eslint',
+		'prettier/babel'
 	],
 	overrides: [
 		{
@@ -18,7 +19,7 @@ module.exports = {
 			}
 		},
 		{
-			files: ['\\.*\\.js'],
+			files: ['\\.*\\.js', '*.d.ts'],
 			rules: {
 				'filenames/match-regex': 'off'
 			}
@@ -29,6 +30,8 @@ module.exports = {
 	},
 	root: true,
 	rules: {
-		'no-console': 'off'
+		'@typescript-eslint/explicit-module-boundary-types': 'off',
+		'no-console': 'off',
+		'node/no-missing-import': 'off'
 	}
 }
