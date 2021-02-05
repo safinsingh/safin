@@ -1,13 +1,16 @@
 {
-  "compilerOptions": {
-    "target": "es5",
-    "module": "es6",
-    "lib": ["es6"],
-    "allowJs": true,
-    "outDir": "build",
-    "strict": true,
-    "noImplicitAny": true,
-	 "esModuleInterop": true,
-	 "moduleResolution": "Node"
-  }
+	"compilerOptions": {
+		"lib": ["ESNext", "dom"],
+		"target": "es5",
+		"strict": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"forceConsistentCasingInFileNames": true,
+		"noImplicitAny": true,
+		"noImplicitThis": true,
+		"rootDir": "src/",
+		"outDir": "dist/"
+	},
+	"include": ["**/*.ts"],
+	"exclude": ["node_modules"]
 }

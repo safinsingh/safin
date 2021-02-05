@@ -1,0 +1,5 @@
+{
+	"hooks": {
+		"pre-commit": "pnpm run -r fmt:ci && pnpm -r run lint:ci"
+	}
+}
