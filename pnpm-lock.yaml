@@ -9,7 +9,7 @@ devDependencies:
   '@types/node-fetch': 2.5.8
   '@types/prettier': 2.2.0
   eslint: 7.19.0
-  eslint-config-canonical: 25.8.15_eslint@7.19.0+typescript@4.1.5
+  eslint-config-canonical: 25.8.16_eslint@7.19.0+typescript@4.1.5
   eslint-config-prettier: 7.2.0_eslint@7.19.0
   eslint-import-resolver-typescript: 2.3.0_eslint@7.19.0
   eslint-plugin-prettier: 3.3.1_ea5601adac11a59dc1e2379624986c36
@@ -26,6 +26,20 @@ packages:
       '@babel/highlight': 7.12.13
     resolution:
       integrity: sha512-HV1Cm0Q3ZrpCR93tkWOYiuYIgLxZXZFVG2VgK+MBWjUqZTundupbfx2aXarXuw5Ko5aMcjtJgbSs4vUGBS5v6g==
+  /@babel/eslint-parser/7.12.13_eslint@7.19.0:
+    dependencies:
+      eslint: 7.19.0
+      eslint-scope: 5.1.0
+      eslint-visitor-keys: 1.3.0
+      semver: 6.3.0
+    dev: true
+    engines:
+      node: ^10.13.0 || ^12.13.0 || >=14.0.0
+    peerDependencies:
+      '@babel/core': '>=7.11.0'
+      eslint: '>=7.5.0'
+    resolution:
+      integrity: sha512-+VF2M8ZWXc2KVf6L0tFcv6w8IZkCc1rvN65oj6hXxhYtOanlCA6ONpgEdy/HVGmcogu4El4ohdzuyfWYxSsKow==
   /@babel/generator/7.12.15:
     dependencies:
       '@babel/types': 7.12.13
@@ -936,8 +950,9 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-otzzTim2/1+lVrlH19EfQQJEhVJSu0zOb9ygb3iapN6UlyaDtyRq4b5U1FuW0v1lRa9Fp/GJyHkSwm6NqABgCA==
-  /eslint-config-canonical/25.8.15_eslint@7.19.0+typescript@4.1.5:
+  /eslint-config-canonical/25.8.16_eslint@7.19.0+typescript@4.1.5:
     dependencies:
+      '@babel/eslint-parser': 7.12.13_eslint@7.19.0
       '@typescript-eslint/eslint-plugin': 4.15.0_1e790e83c007786aa4055203e9656318
       '@typescript-eslint/parser': 4.15.0_eslint@7.19.0+typescript@4.1.5
       babel-eslint: 10.1.0_eslint@7.19.0
@@ -969,7 +984,7 @@ packages:
       eslint: ^6.0.0 || ^7.0.0
       typescript: '*'
     resolution:
-      integrity: sha512-1SA0yv/Y8QB1GHNvU2QxmOrsBADK6Y5eep4Cya/HuTyeXEzD323EUghTYWa+Wxkq2uSKrl6zuTsvLsK6mXlT/w==
+      integrity: sha512-6xev+k2DTvNHCh9QE8Ephu61ZBTC6WwgbGX3Z+ltKUiASfFHRKCbf0uchKq/zQnvr5hJed9PUhBGxvvD+2JI1g==
   /eslint-config-prettier/7.2.0_eslint@7.19.0:
     dependencies:
       eslint: 7.19.0
@@ -1313,6 +1328,15 @@ packages:
       node: '>=4.0.0'
     resolution:
       integrity: sha512-bt+Sh8CtDmn2OajxvNO+BX7Wn4CIWMpTRm3MaiKPCQcnnlm0CS2mhui6QaoeQugs+3Kj2ESKEEGJUdVafwhiCg==
+  /eslint-scope/5.1.0:
+    dependencies:
+      esrecurse: 4.3.0
+      estraverse: 4.3.0
+    dev: true
+    engines:
+      node: '>=8.0.0'
+    resolution:
+      integrity: sha512-iiGRvtxWqgtx5m8EyQUJihBloE4EnYeGE/bz1wSPwJE6tZuJUtHlhqDM4Xj2ukE8Dyy1+HCZ4hE0fzIVMzb58w==
   /eslint-scope/5.1.1:
     dependencies:
       esrecurse: 4.3.0
@@ -3412,7 +3436,7 @@ specifiers:
   '@types/prettier': 2.2.0
   chalk: ^4.1.0
   eslint: 7.19.0
-  eslint-config-canonical: 25.8.15
+  eslint-config-canonical: 25.8.16
   eslint-config-prettier: 7.2.0
   eslint-import-resolver-typescript: 2.3.0
   eslint-plugin-prettier: 3.3.1
