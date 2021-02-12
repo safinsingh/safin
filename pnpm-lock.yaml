@@ -5,7 +5,7 @@ dependencies:
   open: 7.4.0
 devDependencies:
   '@types/eslint': 7.2.6
-  '@types/node': 14.14.26
+  '@types/node': 14.14.27
   '@types/node-fetch': 2.5.8
   '@types/prettier': 2.2.0
   eslint: 7.19.0
@@ -186,10 +186,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-EPpXLOVqDvisVxtlbvzfyqSsFeQxltFbluZNRndIb8tr9KiBnYNLzrc1N3pyKUCww2RNrfHDViqDWWE1LCJQtQ==
-  /@types/node/14.14.26:
+  /@types/node/14.14.27:
     dev: true
     resolution:
-      integrity: sha512-skWxepWOs+VArEBWd2S/VR3wUavioIIx9/HzW+UJiIjtwa6+kNXdsOeq7FfxDXf56hIcL0ieo2brwMgBJ1+lhw==
+      integrity: sha512-Ecfmo4YDQPwuqTCl1yBxLV5ihKfRlkBmzUEDcfIRvDxOTGQEeikr317Ln7Gcv0tjA8dVgKI3rniqW2G1OyKDng==
   /@types/normalize-package-data/2.4.0:
     dev: true
     resolution:
@@ -3435,7 +3435,7 @@ packages:
       integrity: sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==
 specifiers:
   '@types/eslint': 7.2.6
-  '@types/node': 14.14.26
+  '@types/node': 14.14.27
   '@types/node-fetch': 2.5.8
   '@types/prettier': 2.2.0
   chalk: ^4.1.0
