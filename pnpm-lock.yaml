@@ -9,7 +9,7 @@ devDependencies:
   '@types/node-fetch': 2.5.8
   '@types/prettier': 2.2.0
   eslint: 7.19.0
-  eslint-config-canonical: 25.8.16_eslint@7.19.0+typescript@4.1.5
+  eslint-config-canonical: 25.8.17_eslint@7.19.0+typescript@4.1.5
   eslint-config-prettier: 7.2.0_eslint@7.19.0
   eslint-import-resolver-typescript: 2.3.0_eslint@7.19.0
   eslint-plugin-prettier: 3.3.1_ea5601adac11a59dc1e2379624986c36
@@ -954,7 +954,7 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-otzzTim2/1+lVrlH19EfQQJEhVJSu0zOb9ygb3iapN6UlyaDtyRq4b5U1FuW0v1lRa9Fp/GJyHkSwm6NqABgCA==
-  /eslint-config-canonical/25.8.16_eslint@7.19.0+typescript@4.1.5:
+  /eslint-config-canonical/25.8.17_eslint@7.19.0+typescript@4.1.5:
     dependencies:
       '@babel/eslint-parser': 7.12.13_eslint@7.19.0
       '@typescript-eslint/eslint-plugin': 4.15.0_1e790e83c007786aa4055203e9656318
@@ -988,7 +988,7 @@ packages:
       eslint: ^6.0.0 || ^7.0.0
       typescript: '*'
     resolution:
-      integrity: sha512-6xev+k2DTvNHCh9QE8Ephu61ZBTC6WwgbGX3Z+ltKUiASfFHRKCbf0uchKq/zQnvr5hJed9PUhBGxvvD+2JI1g==
+      integrity: sha512-eOzcYJhP8GYQ02rUkNZtdGkugWAxBetNK4LEVWTM3KuI0/y9QsoIWihpO8NpbNOu14Qsg+QuQ3y/1zA8we0p2g==
   /eslint-config-prettier/7.2.0_eslint@7.19.0:
     dependencies:
       eslint: 7.19.0
@@ -3440,7 +3440,7 @@ specifiers:
   '@types/prettier': 2.2.0
   chalk: ^4.1.0
   eslint: 7.19.0
-  eslint-config-canonical: 25.8.16
+  eslint-config-canonical: 25.8.17
   eslint-config-prettier: 7.2.0
   eslint-import-resolver-typescript: 2.3.0
   eslint-plugin-prettier: 3.3.1
