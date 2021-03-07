@@ -4,7 +4,7 @@ dependencies:
   node-fetch: 2.6.1
   open: 7.4.0
 devDependencies:
-  '@types/eslint': 7.2.6
+  '@types/eslint': 7.2.7
   '@types/node': 14.14.31
   '@types/node-fetch': 2.5.8
   '@types/prettier': 2.2.2
@@ -161,13 +161,13 @@ packages:
       node: '>= 8'
     resolution:
       integrity: sha512-8Broas6vTtW4GIXTAHDoE32hnN2M5ykgCpWGbuXHQ15vEMqr23pB76e/GZcYsZCHALv50ktd24qhEyKr6wBtow==
-  /@types/eslint/7.2.6:
+  /@types/eslint/7.2.7:
     dependencies:
       '@types/estree': 0.0.46
       '@types/json-schema': 7.0.7
     dev: true
     resolution:
-      integrity: sha512-I+1sYH+NPQ3/tVqCeUSBwTE/0heyvtXqpIopUUArlBm0Kpocb8FbMa3AZ/ASKIFpN3rnEx932TTXDbt9OXsNDw==
+      integrity: sha512-EHXbc1z2GoQRqHaAT7+grxlTJ3WE2YNeD6jlpPoRc83cCoThRY+NUWjCUZaYmk51OICkPXn2hhphcWcWXgNW0Q==
   /@types/estree/0.0.46:
     dev: true
     resolution:
@@ -3378,7 +3378,7 @@ packages:
     resolution:
       integrity: sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==
 specifiers:
-  '@types/eslint': 7.2.6
+  '@types/eslint': 7.2.7
   '@types/node': 14.14.31
   '@types/node-fetch': 2.5.8
   '@types/prettier': 2.2.2
